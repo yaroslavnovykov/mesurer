@@ -1,0 +1,18 @@
+{
+  "name": "mesurer-ext",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "watch": "node build.js --watch",
+    "icons": "node icons/generate.js && cd icons && for s in 16 32 48 128; do rsvg-convert -w $s -h $s icon${s}.svg -o icon${s}.png; done"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "esbuild": "^0.28.0",
+    "preact": "^10.29.1"
+  }
+}
